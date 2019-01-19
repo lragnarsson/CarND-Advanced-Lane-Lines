@@ -48,8 +48,7 @@ The chessboard corners are assumed to be fixed in the x,y - plane in world coord
 
 Before | After
 
-<img src="./output_images/chess_before.jpg" alt="Chessboard before undistortion" width="320px" height="180px">
-<img src="./output_images/chess_after.jpg" alt="Chessboard after undistortion" width="320px" height="180px">
+<img src="./output_images/chess_before.jpg" alt="Chessboard before undistortion" width="320px" height="180px"> <img src="./output_images/chess_after.jpg" alt="Chessboard after undistortion" width="320px" height="180px">
 
 In the after image, the lines are now straight as expected.
 
@@ -60,8 +59,7 @@ The first step of the image pipeline is to use the estimated distortion coeffici
 
 Before | After
 
-<img src="./output_images/undistort_before.jpg" alt="Original image" width="320px" height="180px">
-<img src="./output_images/undistort_before.jpg" alt="Undistorted image" width="320px" height="180px">
+<img src="./output_images/undistort_before.jpg" alt="Original image" width="320px" height="180px"> <img src="./output_images/undistort_before.jpg" alt="Undistorted image" width="320px" height="180px">
 
 The code can be found in the notebook under headers *Find Chessboard Corners in Calibration Images* and *Calibrate Camera*
 
@@ -79,8 +77,7 @@ The original and transformed images with the polygons visualized is shown in the
 
 Before | After
 
-<img src="./output_images/persp_before.jpg" alt="Identified road plane" width="320px" height="180px">
-<img src="./output_images/persp_after.jpg" alt="After perspective transform" width="320px" height="180px">
+<img src="./output_images/persp_before.jpg" alt="Identified road plane" width="320px" height="180px"> <img src="./output_images/persp_after.jpg" alt="After perspective transform" width="320px" height="180px">
 
 The source polygon was adjusted until the lines in the transformed image were straight.
 
@@ -97,11 +94,9 @@ The final mask I used was to include all different approaches at once (logical O
 
 Before | After
 
-<img src="./output_images/edge_before5.jpg" alt="Before edge detection A" width="320px" height="180px">
-<img src="./output_images/edge_after5.jpg" alt="After edge detection A" width="320px" height="180px">
+<img src="./output_images/edge_before5.jpg" alt="Before edge detection A" width="320px" height="180px"> <img src="./output_images/edge_after5.jpg" alt="After edge detection A" width="320px" height="180px">
 
-<img src="./output_images/edge_before1.jpg" alt="Before edge detection B" width="320px" height="180px">
-<img src="./output_images/edge_after1.jpg" alt="After edge detection B" width="320px" height="180px">
+<img src="./output_images/edge_before1.jpg" alt="Before edge detection B" width="320px" height="180px"> <img src="./output_images/edge_after1.jpg" alt="After edge detection B" width="320px" height="180px">
 
 The shadows together with the desaturated and distorted lines make the second quite difficult to find.
 
@@ -121,8 +116,7 @@ In either case, the selected pixels were used to fit a second order polynomial. 
 
 From Windows | From Priors
 
-<img src="./output_images/fitted_from_windows.png" alt="Lane lines fitted from windows" width="320px" height="180px">
-<img src="./output_images/fitted_from_prior_poly.png" alt="Lane lines fitted from prior polygon" width="320px" height="180px">
+<img src="./output_images/fitted_from_windows.png" alt="Lane lines fitted from windows" width="320px" height="180px"> <img src="./output_images/fitted_from_prior_poly.png" alt="Lane lines fitted from prior polygon" width="320px" height="180px">
 
 The code can be found in the notebook under header *Find Lane Pixels and Estimate Polynomial*
 
